@@ -8,6 +8,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+When I first ran the game, I guessed for the number 8 times. However, I am still allowed to make guesses outside the range. In addition, the "New Game" button didn't allow me to restart the game. Another bug was that the hints were backwards
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -16,6 +17,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+ I used a mixed of Copilot and Claude Code for this project. One suggestion was that "One glitch I found in app.py is that for check_guess: if a guess is higher than the secret, the app returns too high and asks to go higher." Claude understood and fixed the mistake, however this suggestion "So the range vailidation was correct, but a new problem exists where I would have to guess outside the range for the answer" introduced a new problem where the secret was outside the range
 ---
 
 ## 3. Debugging and testing your fixes
@@ -25,7 +27,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+I ran tests in logic_utils using both pytest and manual. After each test, I ran pytest on the test_game_logic fikle with all of them passing. The error I focused on were fixing the backwards 
 ---
+
 
 ## 4. What did you learn about Streamlit and state?
 
