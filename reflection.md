@@ -37,6 +37,7 @@ I ran tests in logic_utils using both pytest and manual. After each test, I ran 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 - What change did you make that finally gave the game a stable secret number?
 
+The secret number kept changing because every interaction causes the entire script to rerun in Streamlit. I would tell them that in Streamlit, touching a widget changes the source code from bottom to top. I used the random module to get a number that was between the ranges for each mode
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -45,3 +46,7 @@ I ran tests in logic_utils using both pytest and manual. After each test, I ran 
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I will use the strategy of making prompts in future labs and the use of git in future projects and in my career.
+One thing I could do differently is reading the code before accepting the suggestion that the AI gives me
+This project changed the way I felt about AI; it can be a useful tool to work with along side your problem solving skills to help with debugging
